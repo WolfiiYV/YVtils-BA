@@ -32,6 +32,15 @@ public class InvOpen {
                 inventory.put(player.getUniqueId(), e.getInventory().getContents());
                 containerLocation.put(player.getUniqueId(), e.getInventory().getLocation());
 
+                if (Vanish.vanish.get(player.getUniqueId())) {
+                    for (Player nearPlayer : player.getWorld().getPlayers()) {
+                        double distance = nearPlayer.getLocation().distance(player.getLocation());
+                        if (distance <= 16) {
+                            nearPlayer.stopAllSounds();
+                        }
+                    }
+                }
+
                 e.setCancelled(true);
 
                 player.closeInventory();

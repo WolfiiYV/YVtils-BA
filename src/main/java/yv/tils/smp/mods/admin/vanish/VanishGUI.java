@@ -91,6 +91,9 @@ public class VanishGUI {
             }
         }
 
+        if (Vanish.vanish.containsKey(player.getUniqueId()))
+            Vanish.oldVanish.put(player.getUniqueId(), Vanish.vanish.get(player.getUniqueId()));
+
         player.openInventory(inv);
     }
 
@@ -324,7 +327,6 @@ public class VanishGUI {
 
     public void vanishRegister(Player player, boolean vanish_bool) {
         UUID uuid = player.getUniqueId();
-        if (vanish.containsKey(uuid) && vanish.get(uuid) == vanish_bool) alreadyVanished.put(uuid, true);
         vanish.put(uuid, vanish_bool);
     }
 
@@ -350,14 +352,18 @@ public class VanishGUI {
 
     public void guiClose(InventoryCloseEvent e) {
         Player player = (Player) e.getPlayer();
+        Player target = player;
 
-        if (e.getView().getTitle().equals("§x§6§d§8§8§9§6Vanish") && e.getInventory().getSize() == 36) {
-            if (vanish.get(player.getUniqueId())) {
-                new Vanish().enableVanish(player);
+        if (exec_target.containsKey(player.getUniqueId())) {
+            target = Bukkit.getPlayer(MojangAPI.UUID2Name(exec_target.get(player.getUniqueId())));
+        }
+
+        if (e.getView().getTitle().equals("§x§6§d§8§8§9§6Vanish") && e.getInventory().getSize() == 36 && e.getInventory().getLocation() == null) {
+            if (vanish.get(target.getUniqueId())) {
+                new Vanish().enableVanish(target);
             } else {
-                new Vanish().disableVanish(player);
+                new Vanish().disableVanish(target);
             }
         }
     }
-
 }

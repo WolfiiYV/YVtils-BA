@@ -62,13 +62,6 @@ public class CreateFile_en {
         ymlFile.addDefault("MOD_ANNOUNCEMENT_BAN", "'PREFIXMODERATION §8PLAYER §7got banned from §8MODERATOR§7! Reason");
         ymlFile.addDefault("MOD_ANNOUNCEMENT_TEMPBAN", "'PREFIXMODERATION §8PLAYER §7got banned temporary from §8MODERATOR§7! Reason");
         ymlFile.addDefault("MOD_ANNOUNCEMENT_UNBAN", "PREFIXMODERATION §8PLAYER §7got unbanned from §8MODERATOR§7!");
-        ymlFile.addDefault("VANISH_ACTIVATE", "PREFIX §7Vanish is now activated!");
-        ymlFile.addDefault("VANISH_DEACTIVATE", "PREFIX §7Vanish is now deactivated!");
-        ymlFile.addDefault("VANISH_ITEM_PICKUP_NOT_IN_VANISH", "PREFIX §7You have not vanished! Please use first /vanish before using /v itempickup!");
-        ymlFile.addDefault("VANISH_ITEM_PICKUP_ACTIVATE", "PREFIX §7Item Pick Up is now activated!");
-        ymlFile.addDefault("VANISH_ITEM_PICKUP_DEACTIVATE", "PREFIX §7Item Pick Up is now deactivated!");
-        ymlFile.addDefault("VANISH_ALREADY_ACTIVATED", "You are already vanished!");
-        ymlFile.addDefault("VANISH_ALREADY_DEACTIVATED", "You have not vanished!");
         ymlFile.addDefault("MAINTENANCE_PLAYER_NOT_ALLOWED_TO_JOIN_KICK_MESSAGE", "You are not allowed to join the server while maintenance works!");
         ymlFile.addDefault("MAINTENANCE_COMMAND_DEACTIVATE", "§7The maintenance mode is now §adeactivated§7!");
         ymlFile.addDefault("MAINTENANCE_COMMAND_ACTIVATE", "§7The maintenance mode is now §aactivated§7!");
@@ -155,6 +148,11 @@ public class CreateFile_en {
         ymlFile.addDefault("SPEED_RESET_OTHER", "§7The speed of §ePLAYER §7got reset!");
 
         ymlFile.addDefault("ADVANCEMENT_ANNOUNCEMENT", "§fPLAYER has made the advancement ADVANCEMENT");
+
+        ymlFile.addDefault("VANISH_ACTIVATE", "PREFIX §7Vanish is now activated!");
+        ymlFile.addDefault("VANISH_DEACTIVATE", "PREFIX §7Vanish is now deactivated!");
+        ymlFile.addDefault("VANISH_REFRESH", "PREFIX §7Your vanish settings got refreshed!");
+        ymlFile.addDefault("VANISH_REFRESH_OTHER", "PREFIX §7The vanish settings of §ePLAYER §7got refreshed!");
 
         ymlFile.options().copyDefaults(true);
         fileSave();

@@ -75,26 +75,11 @@ x. Documentation on yvnetwork.de/yvtils/smp
 Start Command: (Maybe even remove?)
     Rework completely
 
-Moderation Module:
-    Rework of Moderation CMD
-    Discord Linked Accounts Ban - When Account xyz get banned in Minecraft all Accounts linked with xyz#0000 should be banned in Minecraft
-
-bStats:
-    Show which modules are used in pie diagramms
-
 Older Version Module:
     Piglin Trades (1.16.1):
         Old Ender Pearl Chances, etc (Old Trading Chances)
     Old Combat System (1.8.9):
         No hit cooldown
-
-Maintenance Mode:
-    Discord Chat Sync
-
-InvSee:
-    Access Inventory's of Offline players
-    Edit Inventory's of other players
-    Offhand of players not shown
 
 Language System:
     Add Custom Language Value
@@ -106,12 +91,8 @@ MOTD System (Rework needed):
 Configs:
     Rework config.yml - Remove unnecessary Options or move them into other configs.
     Config Reload Command
-    Import Whitelist Config
     Default World Option
     InGame Config Editor
-
-Waypoints:
-    General waypoints (Server side) and own waypoints ("Client" side)
 
 Scoreboard Builder:
     Many design options (i.e. Death count, Visible name, Player count, Server name)

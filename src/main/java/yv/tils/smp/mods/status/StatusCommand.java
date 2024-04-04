@@ -140,7 +140,6 @@ public class StatusCommand implements CommandExecutor {
     }
 
     private void saveStatus(Player player, String status) {
-
         List<String> list1 = new ArrayList<>();
         List<String> list2 = new ArrayList<>();
         list1.add("STATUS");

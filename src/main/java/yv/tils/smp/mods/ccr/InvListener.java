@@ -20,6 +20,8 @@ import yv.tils.smp.utils.configs.ConfigModeration;
  * @since 4.6.7
  */
 public class InvListener implements Listener {
+
+
     public void onInvClose(Inventory inventory, HumanEntity player) {
         if (player.getOpenInventory().getTitle().equals("§9CCR - Custom Crafting Recipes") && inventory.getSize() == 45) {
             if (!YVtils.getInstance().invClose.contains(player.getUniqueId())) {

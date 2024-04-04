@@ -19,5 +19,6 @@ public class JoinListener implements Listener {
         new PlayerJoin().onPlayerJoin(e);
         new Fly().onRejoin(e);
         new Vanish().onRejoin(e);
+        new Vanish().onOtherJoin(e.getPlayer());
     }
 }

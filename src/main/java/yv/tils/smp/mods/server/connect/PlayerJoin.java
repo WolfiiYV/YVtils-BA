@@ -23,6 +23,7 @@ public class PlayerJoin {
 
         if (Vanish.vanish.containsKey(player.getUniqueId()) && Vanish.vanish.get(player.getUniqueId())) {
             e.setJoinMessage(null);
+            return;
         }
 
         if (YVtils.getInstance().getConfig().getBoolean("SendJoinMessage")) {

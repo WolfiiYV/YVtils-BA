@@ -75,14 +75,6 @@ public class CreateFile_de {
         ymlFile.addDefault("MOD_ANNOUNCEMENT_TEMPBAN", "PREFIXMODERATION §8PLAYER §7wurde von §8MODERATOR§7 getempbannt! Reason: §8REASON§7, Duration: §8DURATION");
         ymlFile.addDefault("MOD_ANNOUNCEMENT_UNBAN", "PREFIXMODERATION §8PLAYER §7wurde von §8MODERATOR §7entbannt!");
 
-        ymlFile.addDefault("VANISH_DEACTIVATE", "PREFIX §7Vanish ist nun deaktiviert!");
-        ymlFile.addDefault("VANISH_ACTIVATE", "PREFIX §7Vanish ist nun aktiviert!");
-        ymlFile.addDefault("VANISH_ITEM_PICKUP_NOT_IN_VANISH", "PREFIX §7Du bist nicht im Vanish! Bitte benutze erst /vanish bevor du /v itempickup benutzt!");
-        ymlFile.addDefault("VANISH_ITEM_PICKUP_DEACTIVATE", "PREFIX §7Item Pick Up ist nun deaktiviert!");
-        ymlFile.addDefault("VANISH_ITEM_PICKUP_ACTIVATE", "PREFIX §7Item Pick Up ist nun aktiviert!");
-        ymlFile.addDefault("VANISH_ALREADY_ACTIVATED", "Du bist bereits im Vanish!");
-        ymlFile.addDefault("VANISH_ALREADY_DEACTIVATED", "Du bist nicht im Vanish!");
-
         ymlFile.addDefault("MAINTENANCE_PLAYER_NOT_ALLOWED_TO_JOIN_KICK_MESSAGE", "Du bist nicht erlaubt, den Server während Wartungsarbeiten zu betreten!");
         ymlFile.addDefault("MAINTENANCE_COMMAND_DEACTIVATE", "§7Der Maintenance Modus ist nun §adeaktiviert§7!");
         ymlFile.addDefault("MAINTENANCE_COMMAND_ACTIVATE", "§7Der Maintenance Modus ist nun §aaktiviert§7!");
@@ -177,6 +169,11 @@ public class CreateFile_de {
         ymlFile.addDefault("SPEED_RESET_OTHER", "§7Die Geschwindigkeit von §ePLAYER §7wurde zurückgesetzt!");
 
         ymlFile.addDefault("ADVANCEMENT_ANNOUNCEMENT", "§fPLAYER hat den Fortschritt ADVANCEMENT §ferzielt");
+
+        ymlFile.addDefault("VANISH_DEACTIVATE", "PREFIX §7Vanish ist nun deaktiviert!");
+        ymlFile.addDefault("VANISH_ACTIVATE", "PREFIX §7Vanish ist nun aktiviert!");
+        ymlFile.addDefault("VANISH_REFRESH", "PREFIX §7Deine Vanish Einstellungen wurde aktualisiert!");
+        ymlFile.addDefault("VANISH_REFRESH_OTHER", "PREFIX §7Die Vanish Einstellungen von §ePLAYER §7wurden aktualisiert!");
 
         ymlFile.options().copyDefaults(true);
         fileSave();

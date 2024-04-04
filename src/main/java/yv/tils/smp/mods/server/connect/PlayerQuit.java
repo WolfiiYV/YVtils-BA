@@ -23,6 +23,7 @@ public class PlayerQuit {
 
         if (Vanish.vanish.containsKey(player.getUniqueId()) && Vanish.vanish.get(player.getUniqueId())) {
             e.setQuitMessage(null);
+            return;
         }
 
         if (YVtils.getInstance().getConfig().getBoolean("SendQuitMessage")) {

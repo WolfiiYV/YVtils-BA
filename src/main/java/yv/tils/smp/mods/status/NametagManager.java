@@ -8,8 +8,7 @@ import org.bukkit.scoreboard.Team;
  * @since 4.6.6
  */
 public class NametagManager {
-
-    private Team GetorCreateTeam(String name, Player player) {
+    private Team checkTeam(String name, Player player) {
         Team team = player.getScoreboard().getTeam(name);
         if (team != null) {
             return team;
@@ -18,7 +17,7 @@ public class NametagManager {
     }
 
     public void addPlayer(Player player, String prefix) {
-        Team team = GetorCreateTeam(player.getUniqueId() + "UUID", player);
+        Team team = checkTeam(player.getUniqueId() + "UUID", player);
         team.setPrefix(prefix);
         team.addEntry(player.getName());
     }

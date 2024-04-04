@@ -1,128 +1,82 @@
 name: YVtils-SMP
 version: '${project.version}'
 main: yv.tils.smp.YVtils
-api-version: '1.20'
 author: WolfiiYV
-contributor: [ SlWed, black_Kittys, Silver ]
+api-version: '1.18'
+contributor:
+  - SlWed
+  - black_Kittys
+  - Silver
 description: Plugin for SMP Server
-website: yvnetwork.de
+website: https://yvnetwork.de/yvtils/smp
 prefix: YVtils-SMP
 
 commands:
   start:
-    permission: yvtils.smp.command.start
   globalmute:
     aliases:
       - mutechat
       - chatmute
-    permission: yvtils.smp.command.globalmute
   fly:
-    permission: yvtils.smp.command.fly
   speed:
-    permission: yvtils.smp.command.speed
     aliases:
       - flyspeed
       - walkspeed
   moderation:
-    permission: yvtils.smp.command.moderation
     aliases:
       - mod
       - admin
   gm:
-    permission: yvtils.smp.command.gamemode
     aliases:
       - gamemode
   vanish:
-    permission: yvtils.smp.command.vanish
     aliases:
       - v
   dm:
-    permission: yvtils.smp.command.directmessage
     aliases:
       - msg
       - whisper
       - tell
       - w
   reply:
-    permission: yvtils.smp.command.reply
     aliases:
       - r
   god:
-    permission: yvtils.smp.command.god
     aliases:
       - godmode
   heal:
-    permission: yvtils.smp.command.heal
   maintenance:
-    permission: yvtils.smp.command.maintenance
   status:
-    permission: yvtils.smp.command.status
     aliases:
       - prefix
       - role
   ccr:
-    permission: yvtils.smp.command.ccr
     aliases:
       - customcraftingrecipes
       - optools
   sit:
-    permission: yvtils.smp.command.sit
     aliases:
       - sitdown
       - chill
   invsee:
-    permission: yvtils.smp.command.invsee
     aliases:
       - inv
       - openinv
       - inventory
       - inventorysee
   ecsee:
-    permission: yvtils.smp.command.ecsee
     aliases:
       - esee
       - enderchest
       - enderchestsee
       - ec
   seed:
-    permission: yvtils.smp.command.seed
+    description: Show the Seed of the World
   tempban:
-    permission: yvtils.smp.command.moderation.tempban
+    description: Temporarily ban a Player
 
 permissions:
-  yvtils.smp.play:
-    description: Let Player Plays
   yvtils.smp.*:
-    description: Allows everything
-  yvtils.smp.bypass.mutechat:
-    description: Let you write while Chat is muted
-  yvtils.smp.command.bypass.seed:
-    description: Do not replace the /seed Command
-  yvtils.smp.command.moderation.announcement:
-    description: Announcement in Chat when a moderator (temp-)bans/kicks/unban a Player
-  yvtils.smp.command.moderation.ban:
-    description: Allow users to ban other Players
-  yvtils.smp.command.moderation.tempban:
-    description: Allow users to tempban other Players
-  yvtils.smp.command.moderation.kick:
-    description: Allow users to kick other Players
-  yvtils.smp.command.moderation.unban:
-    description: Allow users to unban other Players
-  yvtils.smp.collercodes.chat:
-    description: With this Permission Players can use Color Codes in Chat
-  yvtils.smp.maintenance.join:
-    description: Players with this Permission can Join, when the Maintenance Mode is activated!
-  yvtils.smp.command.status.clear.other:
-    description: Players with this Permission can clear the Status of other Players
-  yvtils.smp.command.status.set:
-    description: Players with this Status can set a custom Status
-  yvtils.smp.module.fun.timber:
-    description: Players with this Permission can use the Timber Module when it is activated!
-  yvtils.smp.module.fun.veinmine:
-    description: Players with this Permission can use the VeineMiner Module when it is activated!
-  yvtils.smp.update.getannounced:
-    description: Announcement (on Join) in Chat when a Plugin Update is available!
-  yvtils.smp.invsee.edit:
-    description: Let the Player edit the Inventory which he opened.
-  yvtils.smp.chatsync:
-    description: Sync Messages from Players with this permission to discord
+    default: op
+    description: All Permissions for YVtils-SMP
+    children:
