@@ -1,3 +1,6 @@
+# THIS VERSION IS OLD AN DOES NOT GET ANY MORE UPDATES!
+# USE THIS INSTEAD: https://github.com/yvtils/yvtils-smp
+
 **YVtils-SMP**
 
 [![Crowdin](https://badges.crowdin.net/yvtils-smp/localized.svg)](https://crowdin.com/project/yvtils-smp)
